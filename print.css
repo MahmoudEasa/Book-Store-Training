@@ -1,0 +1,8 @@
+@media print {
+    body {
+        color: chartreuse;
+    }
+    * {
+        font-size: 1.5em;
+    }
+}

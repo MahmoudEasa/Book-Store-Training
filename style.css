@@ -1,0 +1,25 @@
+audio{
+    padding: 5px;
+    margin: 5px;
+}
+video{
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.form{
+    width: 18%;
+    margin-left: 0%;
+    box-shadow: 2px 2px 2px yellow;
+}
+
+div .input{
+    margin-top: 5px;
+    box-shadow: 3px 3px 2px;
+}
+
+#link {
+    width: 200px;
+}
+
+

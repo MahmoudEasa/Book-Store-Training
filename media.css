@@ -1,0 +1,50 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.parent div {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+    width: 100%;
+}
+
+/* Mobile First*/
+    @media (max-width: 767px) {
+
+    }
+
+    /* Small Screens */
+    @media (min-width: 768px) {
+        .parent div {
+            width: calc(50% - 10px);
+        }
+    }
+
+    /* Medium Screens */
+    @media (min-width: 992px) {
+        .parent div {
+            width: calc(25% - 10px);
+        }
+    }
+
+    /* Large Screens */
+    @media (min-width: 1200px) {
+
+    }
+
+    /* x Large Screens */
+    @media (min-width: 1400px) {
+
+    }

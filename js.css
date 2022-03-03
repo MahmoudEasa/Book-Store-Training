@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* div {
+  font-size: 30px;
+  line-height: 2;
+  color: blue;
+  background-color: black !important;
+  justify-content: space-between;
+  cursor: pointer;
+  height: ;
+  box-sizing: border-box;
+} */
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+/* بداية زرار إذهب إلى أعلى */
+/* body {
+  height: 5000px;
+  width: 5000px;
+}
+button {
+  display: none;
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+} */
+/* نهاية زرار إذهب إلى أعلى */
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+/* بداية تطبيق الألوان */
+/* body {
+  background-color: #eee;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  background-color: #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  width: 400px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  width: 60px;
+  height: 60px;
+  border: 2px solid transparent;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+ul li.active,
+ul li:hover {
+  opacity: 1;
+}
+
+ul li:first-child {
+  background-color: red;
+}
+
+ul li:nth-child(2) {
+  background-color: green;
+}
+
+ul li:nth-child(3) {
+  background-color: blue;
+}
+
+ul li:nth-child(4) {
+  background-color: black;
+}
+
+.experiment {
+  background-color: red;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+} */
+/* نهاية تطبيق الألوان */
+/* 
+
+
+
+
+
+
+
+
+
+
+ */
+/* بداية برنامج إضافة عناصر */
+/* Start BOM Challenge */
+/* .container {
+  padding: 20px 30px;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 20px;
+  background-color: rgb(236, 234, 234);
+  border-radius: 10px;
+}
+.input {
+  width: 75%;
+  border-color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.add {
+  background-color: red;
+  border-color: red;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+  padding: 20px;
+  border-radius: 10px;
+}
+.container-ele {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 2.5rem;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remove {
+  background-color: red;
+  border-color: red;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+button {
+  padding: 10px;
+  margin: 10px 30px;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+button:hover {
+  transform: scale(1.2, 1.2);
+  background-color: rgb(54, 54, 54);
+} */
+/* End BOM Challenge */
