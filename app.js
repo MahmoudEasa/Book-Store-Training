@@ -1,3 +1,368 @@
+// References
+// Random Element From Sequence
+// إزاي نطلع عنصر عشوائي من الأراى
+
+// Ahmed => Index 0
+// Sayed => Index 1
+// Ali => Index 2
+// let arr = ["Ahmed", "Sayed", "Ali"];
+// console.log(arr.length); // 3
+// console.log(Math.random() * arr.length);
+// console.log(Math.floor(Math.random() * arr.length));
+// console.log(Math.trunc(Math.random() * arr.length));
+// console.log(arr[Math.trunc(Math.random() * arr.length)]);
+
+
+
+
+
+/* تطبيقات على HTML, CSS, JavaScript - توليد رقم متسلسل عشوائي */
+/**
+ * [1] Set Characters to Create The Serial
+ * [2] Set Serial Characters Count
+ * [3] Create Empty Variable To Store The Serial
+ * [4] Create Random Number + Access Sequence
+ * [5] Store The Random Element in The Empty Variable
+ * [6] Loop x Count
+ * [7] Change Serial Element Content With The Serial Variable
+ */
+// Global Variables
+// let serial = document.querySelector(".serial");
+// let btn = document.querySelector(".generate");
+// btn.addEventListener("click", function ()
+// {
+//   let characters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//   let carsCount = 20;
+//   let randomSerial = "";
+//   for (let i = 0; i < carsCount; i++)
+//   {
+//     randomSerial += characters[Math.floor(Math.random() * characters.length)];
+//   }
+//   serial.innerHTML = randomSerial;
+// })
+
+
+
+
+// Create Our Work Filter
+// تطبيقات على HTML, CSS, JavaScript - عرض قسم أعمالنا مع الفلتر
+// الكود بتاعي
+// let liAll = document.querySelectorAll(".switcher li");
+// let liArray = Array.from(liAll);
+// let imgAll = document.querySelectorAll(".gallery img");
+// let imgArray = Array.from(imgAll);
+
+// // console.log(liArray);
+// for (let item of liArray)
+// {
+//   item.addEventListener("click", function ()
+//   {
+//     // Remove Active Class
+//     for (let item of liArray)
+//     {
+//       item.classList.remove("active");
+//     }
+//     // Add Active Class
+//     item.classList.add("active");
+//     // Filter
+//     for (let item of imgArray)
+//     {
+//       item.style.display = "none";
+//     }
+
+//     let dataSet = document.querySelectorAll(item.dataset.cat);
+//     for (let item of dataSet)
+//     {
+//       item.style.display = "block";
+//     }
+//   })
+// }
+
+// الكود بتاع الزيرو
+// let switcherLis = document.querySelectorAll(".switcher li");
+// let imgs = Array.from(document.images);
+
+// switcherLis.forEach((li) => {
+//   li.addEventListener("click", removeActive);
+//   li.addEventListener("click", manageImgs);
+// });
+
+// // Remove Active Class From All Lis And Add To Current
+// function removeActive() {
+//   switcherLis.forEach((li) => {
+//     li.classList.remove("active");
+//     this.classList.add("active");
+//   });
+// }
+
+// // Manage Imgs
+// function manageImgs() {
+//   imgs.forEach((img) => {
+//     img.style.display = "none";
+//   });
+//   document.querySelectorAll(this.dataset.cat).forEach((el) => {
+//     el.style.display = "block";
+//   });
+// }
+
+
+
+
+/* Random Background Color
+  Practice
+  - Random Background Color
+*/
+// #fd34f7 FF00FF
+// let hexArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+// let colorParts = [];
+// for (let i = 0; i < 6; i++) {
+//   colorParts.push(hexArray[Math.floor(Math.random() * hexArray.length)]);
+// }
+// let finalColor = `#${colorParts.join("")}`;
+// document.body.append(finalColor);
+// document.body.style.backgroundColor = finalColor;
+
+
+
+//تطبيقات على HTML, CSS, JavaScript - حساب عدد الأحرف في حقول الإدخال مع ملأ الحواف
+            //Count Input Characters And Fill Borders
+// let count = document.querySelector(".count");
+// let progress = document.querySelector(".progress");
+// let input = document.querySelector("input");
+// let div = document.querySelector("div");
+// let maxLength = input.getAttribute("maxlength");
+
+// count.innerHTML = maxLength;
+// input.addEventListener("input", function ()
+// {
+//   count.innerHTML = maxLength - this.value.length;
+//   count.innerHTML == 0 ? count.classList.add("zero") : count.classList.remove("zero");
+//   // Set The Progress
+//   progress.style.width = `${(this.value.length * 100) / maxLength}%`;
+// });
+// let count = document.querySelector(".count");
+// let progress = document.querySelector(".progress");
+// let input = document.querySelector("input");
+// let div = document.querySelector("div");
+// let maxLength = input.getAttribute("maxlength");
+// count.innerHTML = maxLength;
+// input.oninput = function () {
+//   count.innerHTML = maxLength - this.value.length;
+//   count.innerHTML == 0 ? count.classList.add("zero") : count.classList.remove("zero");
+//   // Set The Progress
+//   progress.style.width = `${(this.value.length * 100) / maxLength}%`;
+// };
+
+
+
+// تطبيقات على HTML, CSS, JavaScript - عمل قائمة تنقل بملأ الشاشة
+// Fullscreen Navigation
+// Globale Variables
+// let toggleN = document.querySelector(".toggle");
+// let navN = document.querySelector("nav");
+// let closeN = document.querySelector(".close");
+
+// toggleN.addEventListener("click", toggleNav);
+// closeN.addEventListener("click", closeNav);
+
+// function toggleNav()
+// {
+//   navN.classList.toggle("open");
+// }
+// function closeNav()
+// {
+//   navN.classList.remove("open");
+// }
+
+// document.addEventListener("keyup", function (e)
+// {
+//   // console.log(e);
+//   if (e.key === "Escape")
+//   {
+//     navN.classList.remove("open");
+//   }
+// })
+
+
+
+// تطبيقات على HTML, CSS, JavaScript - عمل Countdown للوصول لتاريخ معين
+// Create Countdown Timer
+
+// Globale Variables
+// let daysVar = document.querySelector(".days");
+// let hoursVar = document.querySelector(".hours");
+// let minutesVar = document.querySelector(".minutes");
+// let secondsVar = document.querySelector(".seconds");
+
+// // The End Of The Year Date To Countdown To
+// // 1000 milliseconds = 1 Second
+// let countDownDate = new Date("Dec 31, 2022 23:59:59").getTime();
+// // console.log(countDownDate)
+
+// let counter = setInterval(() =>
+// {
+//   // Get Date Now
+//   let dateNow = new Date().getTime();
+  
+//   // Find The Date Difference Between New And Countdown Date
+//   let dateDiff = countDownDate - dateNow;
+  
+//   // Get Time Units
+//   // let days = Math.floor(dateDiff / 1000 / 60 / 60 / 24);
+//   let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
+//   let hours = Math.floor(dateDiff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+//   let minutess = Math.floor(dateDiff % (1000 * 60 * 60) / (1000 * 60));
+//   let seconds = Math.floor(dateDiff % (1000 * 60) / 1000);
+//   daysVar.innerHTML = days < 10 ? `0${days}` : days;
+//   hoursVar.innerHTML = hours < 10 ? `0${hours}` : hours;
+//   minutesVar.innerHTML = minutess < 10 ? `0${minutess}` : minutess;
+//   secondsVar.innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+
+//   if (dateDiff <= 0)
+//   {
+//     clearInterval(counter);
+//   daysVar.innerHTML = "0";
+//   hoursVar.innerHTML = "0";
+//   minutesVar.innerHTML = "0";
+//   secondsVar.innerHTML = "0";
+//   }
+// }, 1000);
+
+
+
+// تطبيقات على HTML, CSS, JavaScript - تغيير عرض العناصر عند الوصول للقسم
+// Animate Width On Scrolling
+
+// Globale Variables
+// let sec = document.querySelectorAll("section");
+// let secThree = document.querySelector(".three");
+// let skills = document.querySelector(".skills");
+// let progress = document.querySelectorAll(".progress span");
+
+// window.addEventListener("scroll", function (e)
+// {
+// for (let item of sec)
+// {
+//   e.preventDefault();
+//   const rect = item.getBoundingClientRect()
+
+//     if (rect.top > -100 && rect.top < 250)
+//     {
+//       item.classList.add("active");
+//     } else
+//     {
+//       item.classList.remove("active");
+//     }
+//   }
+// })
+
+// window.addEventListener("scroll", function (e)
+// {
+//   for (let item of progress)
+//   {
+//   e.preventDefault();
+//   const rect = item.getBoundingClientRect()
+
+//     if (rect.top > -100 && rect.top < 600)
+//     {
+//       item.style.width = item.getAttribute("data-width");
+//     } else
+//     {
+//       item.style.width = "0";
+//     }
+//   }
+// })
+
+
+
+// تطبيقات على HTML, CSS, JavaScript - زيادة الأرقام عند الوصول للقسم
+// Increase Numbers On Scrolling
+
+// الكود بتاعي
+// Global Variabels
+// let sections = document.querySelectorAll("section");
+// let secthree = document.querySelector(".three");
+// let numsDiv = document.querySelectorAll(".nums .num");
+// let started = false; // Function Started ? No
+
+// // Add Active To Sections
+// window.addEventListener("scroll", activeSec);
+// function activeSec()
+// {
+//   for (let item of sections)
+//   {
+//     let rect = item.getBoundingClientRect();
+//     if (rect.top > -100 && rect.top < 250)
+//     {
+//       item.classList.add("active");
+//     } else
+//     {
+//       item.classList.remove("active");
+//     }
+//   }
+// }
+
+// // Increase Numbers On Scrolling
+// window.addEventListener("scroll", increaseNum);
+// function increaseNum()
+// {
+//   for (let item of numsDiv)
+//   {
+//     let nums = item.getAttribute("data-goal");
+//     let rect = item.getBoundingClientRect();
+//     if (rect.top > -100 && rect.top < 500)
+//     {
+//       if (!started)
+//       {
+//         let count = setInterval(() =>
+//         {
+//           item.innerHTML++;
+//           if (item.innerHTML == nums)
+//           {
+//             clearInterval(count);
+//           }
+//           started = true;
+//         }, 2000 / nums);
+//       }
+//     } else
+//     {
+//         item.innerHTML = "0";
+//         started = false;
+//     }
+//     }
+// }
+
+// الكود بتاع الزيرو
+// let nums = document.querySelectorAll(".nums .num");
+// let section = document.querySelector(".three");
+// let started = false; // Function Started ? No
+
+// window.onscroll = function () {
+//   if (window.scrollY >= section.offsetTop) {
+//     if (!started) {
+//       nums.forEach((num) => startCount(num));
+//     }
+//     started = true;
+//   }
+// };
+
+// function startCount(el) {
+//   let goal = el.dataset.goal;
+//   let count = setInterval(() => {
+//     el.textContent++;
+//     if (el.textContent == goal) {
+//       clearInterval(count);
+//     }
+//   }, 2000 / goal);
+// }
+
+
+
+
+
+
+
+
 // window.onload = function () {
 //     document.querySelector("h1").style.color = "blue";
 // }
@@ -3084,14 +3449,17 @@ BOM [Browser Object Model]
 // }
 
 // // Function For Add Item To My Div
-// inpSubmit.addEventListener("click", function (e)
+// inpSubmit.addEventListener("click", function ()
 // {
-//   e.preventDefault();
-//   itemsArray.push(inpText.value);
-//   localStorage.setItem("items", JSON.stringify(itemsArray));
-//   pMaker(inpText.value);
-//   // inpText.value = "";
-//   myDiv.style.display = "flex";
+//   if (inpText.value !== "")
+//   {
+    
+//     itemsArray.push(inpText.value);
+//     localStorage.setItem("items", JSON.stringify(itemsArray));
+//     pMaker(inpText.value);
+//     inpText.value = "";
+//     myDiv.style.display = "flex";
+//   }
 // });
 //   data.forEach(item => {
 //     pMaker(item);
@@ -3100,6 +3468,7 @@ BOM [Browser Object Model]
 // btnRemove.addEventListener("click", function ()
 // {
 //   localStorage.clear();
+//   location.reload();
 //   while (myDiv.firstChild) {
 //     myDiv.removeChild(myDiv.firstChild)
 //   }
